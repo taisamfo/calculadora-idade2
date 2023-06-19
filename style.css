@@ -1,0 +1,176 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(0, 0%, 94%);
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 350px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 20px;
+    border-bottom-right-radius: 30%;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+}
+
+form {
+    display: flex;
+    gap: 25px;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.date-input {
+    width: 85px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#day:focus {
+    outline: none !important;
+    border:1px solid hsl(259, 100%, 65%);
+}
+
+#month:focus {
+    outline: none !important;
+    border:1px solid hsl(259, 100%, 65%);
+}
+
+#year:focus {
+    outline: none !important;
+    border:1px solid hsl(259, 100%, 65%);
+}
+
+.error-input {
+    border-color: hsl(0, 100%, 67%);
+}
+
+#day-error, #month-error, #year-error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: hsl(0, 100%, 67%);
+    font-size: 9px;
+    font-weight:lighter;
+    font-style: italic;
+}
+
+.arrow-line {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    margin: 0px;
+    border: 0;
+    clear:both;
+    display:block;
+    width: 85%;               
+    background-color: hsl(0, 0%, 86%);
+    height: 1px;
+}
+
+img {
+    display: inline;
+    width: 65px;
+    height: 65px;
+}
+
+.result-box {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bolder;
+    line-height: 1;
+    color: hsl(259, 100%, 65%)
+
+}
+
+.result-box .date-value{
+    color: rgb(20, 20, 20);
+}
+
+.filter{
+    filter: invert(44%) sepia(67%) saturate(6134%) hue-rotate(244deg) brightness(100%) contrast(102%);
+}
+
+.filter-hover {
+    filter: invert(0%) sepia(14%) saturate(659%) hue-rotate(336deg) brightness(96%) contrast(84%);
+}
+
+
+footer {
+    font-family: 'Poppins', sans-serif;;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-style: normal;
+    margin:30px;
+    color: hsl(259, 100%, 65%)
+  }
+
+p {
+    margin-left: 5px;
+}  
+
+@media (max-width: 500px) {
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 400px;
+        background-color: hsl(0, 0%, 100%);
+        padding: 30px;
+        border-radius: 20px;
+        border-bottom-right-radius: 30%;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    form {
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    .date-input {
+        width: 60px;
+        padding-left: 5px;
+    }
+
+}
